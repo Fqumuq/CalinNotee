@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/wallpaper"
+    tools:context=".AddItem">
+
+    <Button
+        android:id="@+id/btnBack"
+        android:layout_width="67dp"
+        android:layout_height="56dp"
+        android:background="@drawable/blue_button"
+        android:onClick="buClick"
+        android:text="Back"
+        android:shadowColor="#808080"
+        android:shadowDx="0"
+        android:shadowDy="3"
+        android:shadowRadius="4"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.044"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.023" />
+
+    <Button
+        android:id="@+id/btnSave"
+        android:layout_width="67dp"
+        android:layout_height="56dp"
+        android:background="@drawable/blue_button"
+        android:onClick="buClick"
+        android:shadowColor="#808080"
+        android:shadowDx="0"
+        android:shadowDy="3"
+        android:shadowRadius="4"
+        android:text="Save"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.953"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.023" />
+
+    <EditText
+        android:id="@+id/Item"
+        android:layout_width="374dp"
+        android:layout_height="59dp"
+        android:background="@drawable/edittext_border"
+        android:ems="10"
+        android:inputType="text"
+        android:text=" "
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.567"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnBack"
+        app:layout_constraintVertical_bias="0.15" />
+
+    <TextView
+        android:id="@+id/txtItem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add item:"
+        android:textColor="#808080"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.126"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.17" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Item"
+        app:srcCompat="@drawable/stars2" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

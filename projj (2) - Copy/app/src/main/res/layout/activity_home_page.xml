@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/wallpaper"
+    tools:context=".HomePage">
+
+    <Button
+        android:id="@+id/btnNotes"
+        android:layout_width="351dp"
+        android:layout_height="62dp"
+        android:layout_marginTop="34dp"
+        android:background="@drawable/pink_button"
+        android:onClick="buClick"
+        android:shadowColor="#808080"
+        android:shadowDx="0"
+        android:shadowDy="3"
+        android:shadowRadius="4"
+        android:text="Notes"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lineView"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/btnLists"
+        android:layout_width="351dp"
+        android:layout_height="62dp"
+        android:background="@drawable/blue_button"
+        android:onClick="buClick"
+        android:shadowColor="#808080"
+        android:shadowDx="0"
+        android:shadowDy="3"
+        android:shadowRadius="4"
+        android:text="To-Do Lists"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnNotes"
+        app:layout_constraintVertical_bias="0.054" />
+
+    <Button
+        android:id="@+id/btnDiaries"
+        android:layout_width="351dp"
+        android:layout_height="62dp"
+        android:background="@drawable/green_button"
+        android:onClick="buClick"
+        android:shadowColor="#808080"
+        android:shadowDx="0"
+        android:shadowDy="3"
+        android:shadowRadius="4"
+        android:text="Diaries"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnLists"
+        app:layout_constraintVertical_bias="0.067" />
+
+    <Button
+        android:id="@+id/btnSafe"
+        android:layout_width="351dp"
+        android:layout_height="62dp"
+        android:background="@drawable/purple_button"
+        android:onClick="buClick"
+        android:shadowColor="#808080"
+        android:shadowDx="0"
+        android:shadowDy="3"
+        android:shadowRadius="4"
+        android:text="Add Images"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnDiaries"
+        app:layout_constraintVertical_bias="0.088" />
+
+    <TextView
+        android:id="@+id/Name"
+        android:layout_width="182dp"
+        android:layout_height="45dp"
+        android:layout_marginBottom="18dp"
+        android:shadowColor="#808080"
+        android:shadowDx="0"
+        android:shadowDy="3"
+        android:shadowRadius="4"
+        android:text="Hello, [Name]"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/lineView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <View
+        android:id="@+id/lineView"
+        android:layout_width="0dp"
+        android:layout_height="3dp"
+        android:background="#71797E"
+        android:textColor="#71797E"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.109" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="196dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lineView"
+        app:srcCompat="@drawable/stars2" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
